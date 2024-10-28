@@ -1,0 +1,237 @@
+body {
+  background-image: url('img/folhagem.jpg');   
+}
+
+.body-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+ 
+  
+}
+.navbar {
+  background-color: #587c44;
+  overflow: hidden ;
+  position: fixed;
+  height: 140px;
+  z-index: 1;
+
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: #ffffffaf;
+  color: #88C057;
+}
+
+.footer {
+  background-color: #4E733A;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+  left: 0;
+  bottom: 0;
+  width: 100%
+}
+.footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+.footer a:hover {
+  background-color: #FFFFFF;
+  color:#4E733A;
+}
+
+.form-login {
+  background-color: #FFFFFF; /* Branco */
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 400px;
+  align-items: center;
+  
+}
+
+.form-register {
+  background-color: #ffffff; 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  height: 650px;
+  align-items: center;
+  
+}
+
+
+.form-title {
+  color: #4E733A; /* Verde Escuro */
+  font-size: xx-large;
+  text-align: center;
+  margin: 20px 0 40px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: minhaFonte;
+}
+
+.label-login {
+  display: block;
+  color: #4E733A; 
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.input-register{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #F5F5F5; 
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  
+ 
+}
+
+.input-login {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #F5F5F5; 
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+.button-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFA726; 
+  color: #FFFFFF; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-login:hover {
+  background-color: #88C057;
+}
+
+
+.input-login:focus {
+  outline: none;
+  border-color: #88C057; 
+}
+ 
+
+ .container{
+  background-color:rgba(255, 255, 255, 0.9); /* Fundo translúcido */
+  padding: 20px; 
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  max-width: 800px; /* Largura máxima da caixa */
+  margin: 20px auto; /* Centralizar a caixa horizontalmente */
+}
+
+
+.title1 {
+  font-size: 32px;
+  color: #2E7D32; /* Cor verde para destacar */
+  margin-bottom: 10px;
+  font-family: minhaFonte;
+  text-align: center;
+  text-shadow: #b93a0c;
+ font-weight: bold;
+
+}
+
+.title2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: minhaFonte;
+}
+
+.sobre-mais {
+  font-family: minhaFonte2;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6; 
+  word-spacing: 0.15em; 
+}
+
+@font-face {
+  font-family: minhaFonte;
+  src: url(fonts/Childa.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: minhaFonte2;
+  src: url(fonts/ChildaSans.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: minhaFonte3;
+  src: url(fonts/ChildaBoldItalic.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: minhaFonte4;
+  src: url(fonts/ChildaBold.otf);
+  font-weight: bold;
+}
+
+.registerUser {
+  font-size: 45px;
+  font-family: minhaFonte;
+}
+
+.cart {
+  font-family: minhaFonte;
+  font-size: 45px;
+}
+.erro {
+  color: red;
+  font-size: 14px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center; 
+  margin: 20px; 
+}
+
+.search-input {
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px 0 0 5px; 
+  width: 250px; 
+  font-size: 16px; 
+}
+
+.search-button {
+  padding: 10px 15px;
+  border: 1px solid #ccc; 
+  border-left: none;
+  border-radius: 0 5px 5px 0; 
+  background-color: #FFA726;
+  color: white; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.search-button:hover {
+  background-color: #adb4bb; }

@@ -1,0 +1,102 @@
+
+  @media (max-width: 768px) {
+    .navbar {
+      background-size: contain;
+      height: 50px;
+    }
+  }
+
+.navbar {
+  background-color: #587c44;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+
+.navbar-brand {
+  font-family: minhaFonte;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-family: minhaFonte2;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #ffffffaf;
+  color: #88C057;
+  border-radius: 5px;
+}
+
+
+.footer {
+  background-color: #4E733A;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  font-family: minhaFonte;
+  font-size: 16px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  background-color: #ffffff;
+  color: #4E733A;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.tabela-container {
+  margin-top: 300px; /* Espaço para navbar */
+  margin-bottom: 60px; /* Espaço para footer */
+}
+.title2 {
+  font-size: 24px;
+  color: #333;
+  font-family: minhaFonte;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+@font-face {
+  font-family: minhaFonte;
+  src: url(fonts/Childa.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: minhaFonte2;
+  src: url(fonts/ChildaSans.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: minhaFonte3;
+  src: url(fonts/ChildaBoldItalic.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: minhaFonte4;
+  src: url(fonts/ChildaBold.otf);
+  font-weight: bold;
+}
