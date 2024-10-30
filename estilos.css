@@ -52,6 +52,7 @@ body {
   color:#4E733A;
 }
 
+
 .form-login {
   background-color: #FFFFFF; /* Branco */
   padding: 60px;
@@ -100,8 +101,7 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 15px;
-  
- 
+
 }
 
 .input-login {
@@ -235,3 +235,5 @@ body {
 
 .search-button:hover {
   background-color: #adb4bb; }
+
+ 

@@ -47,3 +47,4 @@ document.getElementById("formRegistro").addEventListener("submit", function(even
     alert("Registro bem-sucedido!");
     document.getElementById("formRegistro").submit();
 });
+

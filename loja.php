@@ -11,16 +11,20 @@
 </head>
 <body>
     <div class="navbar">
+        
         <a href="#home" class="logo">  <img src="img/logo1.png" alt="Logo"></a>
-        <form class="search-bar" action="#">
-            <input type="text" placeholder="Buscar..." name="search" class="search-input">
-            <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></i></button>
-        </form>
+
+        <form class="search-bar" action="buscar.php" method="get">
+    <input type="text" placeholder="Buscar..." name="query" class="search-input">
+    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+</form>
+
+
         <a href="" class="cart"> <i class="fa-solid fa-cart-shopping"></i> Carrinho</a>
         <a href="login.php" class="registerUser"> <i class="fa-solid fa-user"></i> Login/Registro</a>
         <a href="#" class="registerUser" id="catalogo" onclick="mostrarCatalogo(event)"> <i class="fa-solid fa-list"></i> Catágolo</a>
+        <a class="registerUser" href="login.php"><i class="fas fa-sign-out-alt"></i> Sair</a>
     </div>
-    
 
 
 

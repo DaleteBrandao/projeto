@@ -40,7 +40,12 @@
   border-radius: 5px;
 }
 
-
+.footer1 {
+  background-color: #4E733A; 
+  color: #ffffff;
+  font-family: minhaFonte;
+  width: 100%;
+}
 .footer {
   background-color: #4E733A;
   color: #ffffff;

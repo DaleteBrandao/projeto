@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 $conn = new mysqli('localhost', 'root', '', 'mercearia');
 if ($conn->connect_error) {
     die("Conexão falhou: " . $conn->connect_error);
@@ -53,7 +52,7 @@ $conn->close();
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/22359c54e0.js" crossorigin="anonymous"></script>
 </head>
-<body>
+  <body>
     <div class="navbar">
         <a href="loja.php" class="logo">  <img src="img/logo1.png" alt="Logo"></a>
         <a href="registro.php" class="registerUser"> <i class="fa-solid fa-user"></i> Registro</a>
@@ -69,6 +68,7 @@ $conn->close();
         <?php endif; ?>
         
         <form class="form-login" action="login.php" method="POST">
+
             <h2 class="title1"> <i class="fa-brands fa-pagelines"></i> Login <i class="fa-brands fa-pagelines"></i></h2>
             <label for="nome_utilizador" class="label-login">Nome:</label>
             <input type="text" id="nome_utilizador" name="nome_utilizador" class="input-login" required> <br>
@@ -80,6 +80,7 @@ $conn->close();
         </form>
     </div>
     <div class="container"> 
+        
      <h4 class="title1"> Quem Somos?</h4> 
      <h5 class="title2"> Bem-vindo à MVEGAN, a sua mercearia vegana de confiança! </h5> 
 <p class="sobre-mais">  <i class="fa-solid fa-leaf" style= "margin-right: 10px;"></i> Na MVEGAN, acreditamos que uma alimentação saudável, sustentável e consciente é a 
