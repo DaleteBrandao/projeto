@@ -15,8 +15,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $confirma_senha = $_POST['confirma_senha'];
     $dataNascimento = $_POST['dataNascimento'];
 
-    if ($senha !== $confirma_senha) {
+    $dataAtual = new DateTime();
+    $dataNascimentoDate = new DateTime($dataNascimento);
+    $idade = $dataAtual->diff($dataNascimentoDate)->y;
+
+    if($idade < 18) {
+
+        $mensagem_erro = "Necessário ter completado 18 anos para registro.";
+
+    } elseif ($senha !== $confirma_senha) {
         $mensagem_erro = "As senhas não coincidem.";
+
     } else {
         $senha_hash = password_hash($senha, PASSWORD_BCRYPT);
 
@@ -35,6 +44,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if ($stmt->execute()) {
                 $mensagem_sucesso = "Registro realizado com sucesso!";
+                echo "<script>
+        alert('Registro realizado com sucesso! Você será redirecionado para o login.');
+        setTimeout(function() {
+            window.location.href = 'login.php';
+        }, 2000); 
+    </script>";
+                exit;
             } else {
                 $mensagem_erro = "Erro ao registrar utilizador.";
             }
@@ -57,12 +73,6 @@ $conn->close();
     <script src="https://kit.fontawesome.com/22359c54e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="navbar">
-        <a href="loja.php" class="logo">  <img src="img/logo1.png" alt="Logo"></a>
-        <a href="" class="cart"> <i class="fa-solid fa-cart-shopping"></i> Carrinho</a>
-        <a href="login.php" class="registerUser"> <i class="fa-solid fa-user"></i> Login </a>
-    </div>
-
     <?php if (!empty($mensagem_sucesso)) : ?>
             <div class="alert alert-success" role="alert">
                 <?php echo $mensagem_sucesso; ?>
@@ -74,6 +84,17 @@ $conn->close();
                 <?php echo $mensagem_erro; ?>
             </div>
         <?php endif; ?>
+
+        <div class="navbar">
+  <a href="index.html" class="nav-logo">MVEGAN</a>
+  <div class="nav-links">
+    <a href="#sobre">Sobre</a>
+    <a href="loja.php">Produtos</a>
+    <a href="#rodape">Contato</a>
+    <a href="login.php" class="nav-login">Login</a>
+  </div>
+</div>
+
 <div class="body-login">
     <form class="form-register" action="registro.php" method="POST">
    <h2 class="title1"> <i class="fa-brands fa-pagelines"></i> Registro <i class="fa-brands fa-pagelines"></i></h2>
@@ -95,7 +116,7 @@ $conn->close();
     </form>
 </div>
 
-<div class="container"> 
+<div class="container" id="sobre"> 
      <h4 class="title1"> Quem Somos?</h4> 
      <h5 class="title2"> Bem-vindo à MVEGAN, a sua mercearia vegana de confiança! </h5> 
 <p class="sobre-mais">  <i class="fa-solid fa-leaf" style= "margin-right: 10px;"></i> Na MVEGAN, acreditamos que uma alimentação saudável, sustentável e consciente é a 
@@ -105,7 +126,8 @@ chave para um futuro melhor. Por isso, estamos comprometidos em oferecer a você
  Nossa equipe está sempre pronta para ajudar, responder 
 suas perguntas e garantir que você tenha a melhor experiência de compra.  <i class="fa-solid fa-leaf" style= "margin-right: 10px;"></i> </p> </div>
 
-    <div class="footer">
+
+<footer id="rodape">
         <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
       <a href="https://x.com" target="_blank">  <i class="fa-brands fa-x-twitter fa-2x" ></i> </a>
       <a href="https://instagram.com" target="_blank">  <i class="fa-brands fa-square-instagram fa-2x" ></i> </a>    
@@ -113,6 +135,6 @@ suas perguntas e garantir que você tenha a melhor experiência de compra.  <i c
       <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-2x" ></i> </a>
       <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok fa-2x" ></i> </a>
 
-    </div>
+        </footer>
 </body>
 </html>

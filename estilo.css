@@ -105,3 +105,114 @@
   src: url(fonts/ChildaBold.otf);
   font-weight: bold;
 }
+
+/* Corpo do formulário de login */
+.body-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo do formulário de login */
+.form-login {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Título do formulário de login */
+.title1 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Labels dos campos de login */
+.label-login {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #34495e;
+}
+
+/* Campos de entrada de login */
+.input-login {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.input-login:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Botão de envio de login */
+.button-login {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.button-login:hover {
+  background-color: #27ae60;
+}
+
+/* Link de criar conta */
+.form-login p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.form-login p a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.form-login p a:hover {
+  text-decoration: underline;
+}
+
+/* Ícones no título */
+.title1 i {
+  color: #2ecc71;
+  font-size: 20px;
+}
+
+/* Ajuste para responsividade */
+@media (max-width: 480px) {
+  .form-login {
+    padding: 20px;
+  }
+
+  .title1 {
+    font-size: 20px;
+  }
+
+  .button-login {
+    font-size: 14px;
+  }
+}

@@ -1,239 +1,239 @@
-body {
-  background-image: url('img/folhagem.jpg');   
-}
 
 .body-login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+  }
   
-}
-.navbar {
-  background-color: #587c44;
-  overflow: hidden ;
-  position: fixed;
-  height: 140px;
-  z-index: 1;
 
-}
+  .form-login {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
 
-.navbar a {
-  color: #ffffff;
+  .form-register {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+ 
+  .title1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+
+  .label-login {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #34495e;
+  }
+
+  .input-login {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-login:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+
+  .erro {
+    font-size: 12px;
+    color: #e74c3c;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .button-login {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .button-login:hover {
+    background-color: #27ae60;
+  }
+
+  .title1 i {
+    color: #2ecc71;
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .form-register {
+      padding: 20px;
+    }
+  
+    .title1 {
+      font-size: 20px;
+    }
+  
+    .button-login {
+      font-size: 14px;
+    }
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto; 
+    text-align: center;
+  }
+  
+  /* Títulos */
+  .title1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .title2 {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+  
+  /* Parágrafo de descrição "Sobre Mais" */
+  .sobre-mais {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 0;
+  }
+  
+  .sobre-mais i {
+    color: #2ecc71;
+    font-size: 18px;
+  }
+  
+    .title1 {
+      font-size: 20px;
+    }
+  
+    .title2 {
+      font-size: 16px;
+    }
+  
+    .sobre-mais {
+      font-size: 14px;
+    }
+  }
+footer {
+    background-color: #2ecc71;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 100px; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+  }
+
+footer a:hover{
   text-decoration: none;
-  font-size: 17px;
-}
-.navbar a:hover {
-  background-color: #ffffffaf;
-  color: #88C057;
+  color: #2ecc71;
 }
 
-.footer {
-  background-color: #4E733A;
+footer a {
+  text-decoration: none;
   color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 30px;
-  left: 0;
-  bottom: 0;
-  width: 100%
 }
-.footer a {
-  color: #f2f2f2;
-  text-decoration: none;
-  padding: 10px 10px;
-}
-.footer a:hover {
-  background-color: #FFFFFF;
-  color:#4E733A;
-}
-
-
-.form-login {
-  background-color: #FFFFFF; /* Branco */
-  padding: 60px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  height: 400px;
-  align-items: center;
-  
-}
-
-.form-register {
-  background-color: #ffffff; 
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 700px;
-  height: 650px;
-  align-items: center;
-  
-}
-
-
-.form-title {
-  color: #4E733A; /* Verde Escuro */
-  font-size: xx-large;
-  text-align: center;
-  margin: 20px 0 40px;
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 15px;
-  font-family: minhaFonte;
-}
-
-.label-login {
-  display: block;
-  color: #4E733A; 
-  margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 18px;
-}
-.input-register{
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #F5F5F5; 
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 15px;
-
-}
-
-.input-login {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 30px;
-  border: 1px solid #F5F5F5; 
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 17px;
-}
-
-.button-login {
-  width: 100%;
-  padding: 12px;
-  background-color: #FFA726; 
-  color: #FFFFFF; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.button-login:hover {
-  background-color: #88C057;
-}
-
-
-.input-login:focus {
-  outline: none;
-  border-color: #88C057; 
-}
- 
-
- .container{
-  background-color:rgba(255, 255, 255, 0.9); /* Fundo translúcido */
-  padding: 20px; 
-  border-radius: 8px; /* Cantos arredondados */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-  max-width: 800px; /* Largura máxima da caixa */
-  margin: 20px auto; /* Centralizar a caixa horizontalmente */
-}
-
-
-.title1 {
-  font-size: 32px;
-  color: #2E7D32; /* Cor verde para destacar */
-  margin-bottom: 10px;
-  font-family: minhaFonte;
-  text-align: center;
-  text-shadow: #b93a0c;
- font-weight: bold;
-
-}
-
-.title2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: minhaFonte;
-}
-
-.sobre-mais {
-  font-family: minhaFonte2;
-  font-size: 18px;
-  color: #333;
-  line-height: 1.6; 
-  word-spacing: 0.15em; 
-}
-
-@font-face {
-  font-family: minhaFonte;
-  src: url(fonts/Childa.otf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: minhaFonte2;
-  src: url(fonts/ChildaSans.ttf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: minhaFonte3;
-  src: url(fonts/ChildaBoldItalic.otf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: minhaFonte4;
-  src: url(fonts/ChildaBold.otf);
-  font-weight: bold;
-}
-
-.registerUser {
-  font-size: 45px;
-  font-family: minhaFonte;
-}
-
-.cart {
-  font-family: minhaFonte;
-  font-size: 45px;
-}
-.erro {
-  color: red;
-  font-size: 14px;
-}
-
-.search-bar {
+/* Estilo da barra de navegação */
+.navbar {
+  background-color: #2c3e50;
+  padding: 15px 20px;
   display: flex;
-  align-items: center; 
-  margin: 20px; 
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
-.search-input {
-  padding: 10px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px 0 0 5px; 
-  width: 250px; 
-  font-size: 16px; 
+/* Logo da Navbar */
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2ecc71;
+  text-decoration: none;
 }
 
-.search-button {
-  padding: 10px 15px;
-  border: 1px solid #ccc; 
-  border-left: none;
-  border-radius: 0 5px 5px 0; 
-  background-color: #FFA726;
-  color: white; 
-  font-size: 16px; 
-  cursor: pointer; 
+/* Links da Navbar */
+.nav-links a {
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.search-button:hover {
-  background-color: #adb4bb; }
+.nav-links a:hover {
+  color: #2ecc71;
+}
 
- 
+/* Botão de login na Navbar */
+.nav-login {
+  background-color: #2ecc71;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.nav-login:hover {
+  background-color: #27ae60;
+}
+
+/* Navbar responsiva */
+@media (max-width: 768px) {
+  .nav-links a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .nav-logo {
+    font-size: 20px;
+  }
+}
